@@ -7,13 +7,14 @@ def getRecommendationBMI():
     height = input()
     weight = input()
 
-    if height.isdigit() == True and weight.isdigit() == True:
+    if height.isdigit() and weight.isdigit():
         if gender == "w":
             id_weight = int(height) - 110
         elif gender == "m":
             id_weight = int(height) - 100
         else:
             print("Введите корректное значение.")
+            return
     else:
         print("Введите числовые значения роста и веса.")
         return

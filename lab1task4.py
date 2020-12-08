@@ -9,10 +9,8 @@ def int_r(num):
 def changeHeightUnit():
     valFoot = 12*2.54
     valInch = 2.54
-    bul = 0
 
-
-    print("Для перевода в метрическую систкму ввведите целое количество футов роста.")
+    print("Для перевода в метрическую систему ввведите целое количество футов роста.")
     heightValFoot = input()
     print("Введите количество дюймов.")
     heightValInch = input()
@@ -22,10 +20,10 @@ def changeHeightUnit():
         print("Ваш рост в метрической системе - ",  int_r(heightVal), "см." )
 
     except ValueError:
-        bul = 1
+        bool = 1
         print("Введите корректное значание.")
-        while bul == 1:
+        if bool == 1:
             changeHeightUnit()
-            bul = 0
+            bool = 0
 
 changeHeightUnit()
