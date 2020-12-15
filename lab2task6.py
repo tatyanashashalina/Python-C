@@ -1,5 +1,5 @@
 # Написать программу, очищающую строку от лишних пробелов.Лишними считаются пробелы в начале строки,
-# в конце строки и пробелы между словами, если их количество больше 1.
+# в конце строки и пробелы между словами, если их количество больше 1
 
 def delSpaces(str):
     lstStr = str.split(" ")
@@ -10,6 +10,6 @@ def delSpaces(str):
 
     outStr = " ".join(lstStr)
 
-    print(outStr)
+    return outStr
 
-delSpaces("  The tree   is    growing  .")
+print(delSpaces("  The tree   is    growing  ."))

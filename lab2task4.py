@@ -3,7 +3,7 @@
 # Пользоваться дополнительными массивами нельзя.
 # Сортировка в данной задаче неприменима ввиду ее трудоемкости. Нужно использовать группировку элементов массива.
 # Программа движется по строке с двух концов к середине и при встрече с нежелательными символами выполняет обмен
-# с символом на другой стороне.
+# с символом на другой стороне
 
 import string
 import random
@@ -15,8 +15,10 @@ def randMix():
         lst.append(random.choice(string.digits))
 
     lstChars = random.choices(lst, k = random.randint(5, 30))
-    print(lstChars)
+
     return lstChars
+
+print(randMix)
 
 lstCh = randMix()
 

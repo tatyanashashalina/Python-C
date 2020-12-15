@@ -1,11 +1,10 @@
 # Написать программу, выводящую таблицу встречаемости символов для введенной пользователем строки.
-# В этой таблице содержится символ строки и число его повторений.
+# В этой таблице содержится символ строки и число его повторений
 
 def frequency(str):
     lst = list(str)
     print(lst)
     dict = {}
-    i = 0
 
     for elem in lst:
         if elem in dict:
@@ -19,4 +18,4 @@ def frequency(str):
     for i in lstKeys:
         print(i, " : ", dict[i])
 
-frequency("bbbccccdddddaaaaaaaaa")
+frequency("bbbbbbccccdddddaaaaaaaaa")
