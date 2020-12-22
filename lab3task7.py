@@ -12,7 +12,7 @@ def frequency():
             dict[ch] = 1
 
     lstVal = list(dict.items())
-    lstVal.sort(key=lambda i : i[1])
+    lstVal.sort(key=lambda i : i[1], reverse=True)
 
     for i in lstVal:
         print(i[0], ':', i[1])
