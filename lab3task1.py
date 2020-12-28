@@ -3,10 +3,11 @@
 def countWords():
     print("Для посчета количества слов введите строку.")
     str = input()
+    lst = str.split(" ")
     counter = 0
 
-    for ch in range(len(str)):
-        if (str[ch - 1]  == " " or str[ch - 1] == "") and str[ch] != " ":
+    for word in lst:
+        if word != "":
             counter += 1
     return counter
 
